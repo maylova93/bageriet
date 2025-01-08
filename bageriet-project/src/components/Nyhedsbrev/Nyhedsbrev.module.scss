@@ -1,0 +1,75 @@
+@use '../../styles/variables' as *;
+
+.newsletter {
+  padding: 4rem 2rem;
+  background-image: url('/src/assets/newsletterbg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: $font-sm;
+      font-family: 'Open Sans';
+      margin-bottom: 1.8rem;
+    }
+
+    .subText {
+      font-size: $font-sm;
+      font-family: 'Open Sans';
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.5;
+      max-width: 600px;
+    }
+  }
+
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: $color-white;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .icon {
+      padding: 0.8rem;
+      background-color: #b9c8d9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: $color-dark;
+    }
+
+    .inputField {
+      flex: 1;
+      padding: 0.8rem;
+      font-size: $font-sm;
+      font-family: 'Open Sans', sans-serif;
+      border: none;
+      outline: none;
+      color: $color-dark;
+    }
+
+    .submitButton {
+      padding: 0.8rem 1.6rem;
+      font-size: $font-sm;
+      font-family: 'Open Sans';
+      color: $color-white;
+      background-color: #324254;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-black;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use"../../styles/variables" as*;
+.navbar{
+    width:100%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/slide1.jpg");
+    ul{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+     li{
+        list-style-type: none;
+        h1{
+            text-align: center;
+            font-size: $font-lg;
+            font-family: 'lobster';
+            color: $color-white;
+        }
+        a{
+            text-decoration: none;
+            color: $color-white;
+            font-weight: 100;
+            font-family: 'opensans';
+        }
+     }
+    }
+}

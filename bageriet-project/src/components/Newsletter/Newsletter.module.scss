@@ -1,0 +1,51 @@
+@use "../../styles/variables" as *;
+
+.newsletter {
+  text-align: center;
+  padding: 2rem;
+ 
+
+  h2 {
+    font-size: $font-md;
+    font-family: 'Lobster';
+    color: $color-dark;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+  }
+ p{
+    color: #9e9e9e;
+ }
+  .newsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .newsCard {
+    max-width: 300px;
+    text-align: center;
+    .newsImage {
+     width: 80%;
+      border-radius: 50%; 
+      background-size: cover;
+      background-position: center;
+    }
+
+    .newsTitle {
+      font-size: 1.2rem;
+      font-family: 'open sans';
+      margin-bottom: 1rem;
+      color: rgba(50, 50, 50, 0.855);
+    }
+
+    .newsTeaser {
+        font-size: $font-sm;
+        font-family: 'Open Sans';
+        color: #9e9e9e;
+        margin: 0rem;
+        overflow: hidden;
+        white-space: normal;
+    }
+  }
+}
